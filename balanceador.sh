@@ -14,7 +14,7 @@ apt update
 apt install nginx -y
 
 # Copiar el archivo de configuración y cambiar los valores.
-cp default /etc/nginx/sites-available/
+cp /home/ubuntu/iaw-practica-07/default /etc/nginx/sites-available/
 sed -i "s/ip_privada_frontal1/$IP_PRIVADA_FRONTAL1/" /etc/nginx/sites-available/default
 sed -i "s/ip_privada_frontal2/$IP_PRIVADA_FRONTAL2/" /etc/nginx/sites-available/default
 
