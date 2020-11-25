@@ -1,0 +1,10 @@
+upstream frontend {
+       server ip_privada_frontal1;
+       server ip_privada_frontal2;
+   }
+
+   server {
+       location / {
+           proxy_pass http://frontend/;
+       }
+   }
